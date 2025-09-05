@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.font-montserrat{
+  font-family: 'Montserrat', montserrat;
+}
+
+.font-inter {
+    font-family: 'Inter', inter;
+}
+
+.font-roboto {
+    font-family: 'Roboto', roboto;
+}

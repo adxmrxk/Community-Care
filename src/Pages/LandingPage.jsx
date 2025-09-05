@@ -1,13 +1,14 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
+import WelcomeSection from '../Components/WelcomeSection'
+import CardComponent from '../Components/CardComponent'
 
 const LandingPage = () => {
   return (
-    <div className='h-screen border-2'>
+    <div className='h-screen w-screen'>
         <NavBar/>
-        <div className='h-[600px] bg-gray-200'>
-          <h1>Welcome Section</h1>
-        </div>
+        <WelcomeSection/>
+        <CardComponent/>
     </div>
   )
 }
