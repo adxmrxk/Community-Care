@@ -1,7 +1,8 @@
 import React from 'react'
-import NavBar from '../Components/NavBar'
-import WelcomeSection from '../Components/WelcomeSection'
-import CardComponent from '../Components/CardComponent'
+import NavBar from '../Components/Landing Page/NavBar'
+import WelcomeSection from '../Components/Landing Page/WelcomeSection'
+import CardComponent from '../Components/Landing Page/CardComponent'
+import ProcessSection from '../Components/Landing Page/ProcessSection'
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
         <NavBar/>
         <WelcomeSection/>
         <CardComponent/>
+        <ProcessSection/>
     </div>
   )
 }
