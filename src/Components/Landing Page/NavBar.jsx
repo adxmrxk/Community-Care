@@ -14,7 +14,6 @@ function NavBar() {
                     <li className='px-5 py-1 hover:bg-gray-200 hover:rounded-xs transition-all duration-300 ease-in-out cursor-pointer'>Process</li>
                     <li className='px-5 py-1 hover:bg-gray-200 hover:rounded-xs transition-all duration-300 ease-in-out cursor-pointer'>Contact</li>
                     <li className='px-5 py-1 hover:bg-gray-200 hover:rounded-xs transition-all duration-300 ease-in-out cursor-pointer'>Sign Up</li>
-                    <li className='px-5 py-1 hover:bg-gray-200 hover:rounded-xs transition-all duration-300 ease-in-out cursor-pointer'>Log In</li>
                 </ul>
             </nav>
         </div>
