@@ -11,3 +11,7 @@
 .font-roboto {
     font-family: 'Roboto', roboto;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}

@@ -9,5 +9,11 @@ import json
 class UserView(View):
     def get(self, request):
         return HttpResponse('Testing the UserView')
+
+
+def nonUserInquiry(request):
+    return HttpResponse('Send a non-user inquiry to the company')
+
+
     
     
