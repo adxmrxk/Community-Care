@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef } from 'react';
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
+//import Flippy, { FrontSide, BackSide } from 'react-flippy';
 const CardComponent = () => {
   const ref = useRef();
 
