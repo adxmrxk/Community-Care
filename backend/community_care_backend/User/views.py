@@ -1,18 +1,32 @@
-from django.shortcuts import render
+from http.client import HTTPResponse
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 from .models import User
-from django.views import View
+from .serializers import UserSerializer
 from django.http import HttpResponse
-from django.http import JsonResponse
-import json
+from django.http import JsonResponse #To return JSON.
+
+
 
 # Create your views here.
-class UserView(View):
+class UserView(APIView):
     def get(self, request):
-        return HttpResponse('Testing the UserView')
+        return 
+    
+    def post(self, request):
 
+        return 
 
+    def patch(self, request, user_id):
+        return 
+    
+    
 def nonUserInquiry(request):
-    return HttpResponse('Send a non-user inquiry to the company')
+    return 
+
+def defaultView(request):
+    return HttpResponse('Default View')
 
 
     

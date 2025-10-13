@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from User.views import UserView, nonUserInquiry
+from User.views import UserView, nonUserInquiry, defaultView
 
 
 urlpatterns = [
+    path('', defaultView, name='Default-View'),
     path('admin/', admin.site.urls),
     path('User/', UserView.as_view(), name = 'User'),
+    path('User/<user_id>/', UserView.as_view(), name = 'User-Patch'),
     path('nonUserInquiry', nonUserInquiry, name='nonUserInquiry')
 ]

@@ -15,6 +15,7 @@ class User(models.Model):
     lastName = models.CharField(max_length = 64)
     username = models.CharField(max_length = 128, unique = True)
     userRole = models.CharField(max_length = 32, choices = userRoles, default = "REQUESTER")
+    password = models.CharField(max_length = 512)
 
 
     
