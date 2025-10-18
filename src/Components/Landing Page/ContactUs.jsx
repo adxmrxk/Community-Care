@@ -1,4 +1,7 @@
 import React from 'react'
+import { MdPhoneInTalk } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+
 
 //https://dribbble.com/shots/23565236-Contact-our-team-Untitled-UI
 
@@ -44,17 +47,22 @@ const ContactUs = () => {
                 
             </form>
 
-            <div className='mr-10 mt-5 w-[300px] border-2'>
-                <h1 className='font-semibold'>Chat with us</h1>
-                <p className='text-sm'>Speak to our friendly team through chat.</p>
+            <div className='mr-10 mt-5 w-[300px]'>
+                
 
-                <h1 className='font-semibold mt-10'>Call Us</h1>
+                <h1 className='font-semibold'>Call Us</h1>
                 <p className='text-sm'>Call our team Monday to Friday 9AM to 5PM.</p>
-                <h1 className='mt-3'>519-432-5839</h1>
+                <div className='flex flex-row items-center mt-3 gap-1'>
+                    <MdPhoneInTalk className='w-[17px] h-[17px]'></MdPhoneInTalk>
+                    <h1 className='mb-0.5 underline text-md'>519-432-5839</h1>
+                </div>
 
                 <h1 className='font-semibold mt-10'>Visit Us</h1>
                 <p className='text-sm'>Chat to us in person at our office.</p>
-                <h1 className='mt-3'>123 fake adress</h1>
+                <div className='flex flex-row items-center mt-3 gap-1'>
+                    <IoLocationOutline className='w-[16px] h-[16px]'></IoLocationOutline>
+                    <h1 className='underline text-md'>123 fake adress</h1>
+                </div>
 
             </div>
 

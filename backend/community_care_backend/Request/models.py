@@ -9,4 +9,5 @@ class Request(models.Model):
     desc = models.TextField(max_length=512,)
     dueDate = models.DateField()
     createdAt = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='requests')
+    requester = models.ForeignKey(User, on_delete=models.CASCADE, related_name='requester')
+    volunteer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='volunteer', blank = True, null = True)
